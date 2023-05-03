@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        HIGHHG
+<div class="main">
+    <div class="user_input">
+        <form action="#">
+
+            <input type="text" placeholder="Enter City Name" id="city_name" size="50" >
+
+            <button id="search" onclick="getWheatherdata()"> Search </button>
+        </form>
     </div>
+</div>
 </body>
+<script>
+    function getWeatherdata() {
+        var city_name = document.getElementById('city_name').value;
+        console.log(city_name);
+    }
+</script>
 </html>
