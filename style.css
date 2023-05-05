@@ -4,6 +4,7 @@ body {
 margin:0;
 padding:0;
 background-image: url('weat.jpg');
+background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     box-sizing: border-box;
@@ -11,7 +12,7 @@ background-image: url('weat.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 25vh;
     flex-direction: column;
 }
 .search-bar{
