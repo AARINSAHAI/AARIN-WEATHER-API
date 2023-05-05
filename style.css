@@ -6,11 +6,43 @@ padding:0;
 background-image: url('weat.jpg');
     background-size: cover;
     background-position: center top;
-
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    flex-direction: column;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgb(53, 101, 121);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate();
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    width: 400px;
+   
+    font-size: 20px;
+    color: #cac7ff;
+}
+.search-bar button img{
+    width: 25px;
 
 }
-.user_input{
-    text-align: center;
-    margin-top: 100px;
-    width: ;
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
 }
