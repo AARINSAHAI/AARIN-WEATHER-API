@@ -47,3 +47,11 @@ background-repeat: no-repeat;
     cursor: pointer;
     background: transparent;
 }
+.weather_subsection{
+    width: 30%;
+    background-color: #0002;
+    border-radius: 3px;
+    margin-top: 70px;
+    padding: 20px 35px 20px 35px;
+    height: auto;
+}
