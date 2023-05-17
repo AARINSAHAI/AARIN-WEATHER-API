@@ -16,12 +16,14 @@ background-repeat: no-repeat;
     flex-direction: column;
 }
 .search-bar{
+    
     width: 100%;
     max-width: 700px;
     background: rgb(53, 101, 121);
     display: flex;
     align-items: center;
     border-radius: 60px;
+    margin: 20px;
     padding: 10px 20px;
     backdrop-filter: blur(4px) saturate();
 }
@@ -37,6 +39,7 @@ background-repeat: no-repeat;
 }
 .search-bar button img{
     width: 25px;
+    
 
 }
 .search-bar button{
