@@ -3,11 +3,12 @@
 body {
 margin:0;
 padding:0;
-background-image: url('weat.jpg');
+background-image: url('istockphoto-956431518-612x612.jpg');
 background-repeat: no-repeat;
-    background-size: cover;
+    
     background-position: center top;
     box-sizing: border-box;
+    background-size: cover;
     font-family: 'poppins' , sans-serif;
     display: flex;
     justify-content: center;
