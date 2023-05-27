@@ -1,0 +1,43 @@
+.search-bar{
+    
+    width: 100%;
+    max-width: 700px;
+    background: rgb(53, 101, 121);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    margin: 20px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate();
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    width: 400px;
+   
+    font-size: 20px;
+    color: #cac7ff;
+}
+.search-bar button img{
+    width: 25px;
+    
+
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+}
+.weather_subsection{
+    width: 30%;
+    background-color: #0002;
+    border-radius: 3px;
+    margin-top: 70px;
+    padding: 20px 35px 20px 35px;
+    height: auto;
+}

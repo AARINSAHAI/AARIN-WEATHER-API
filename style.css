@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;&display=swap');
 
 
 body {
@@ -11,51 +12,59 @@ background-repeat: no-repeat;
     background-size: cover;
     font-family: 'poppins' , sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 25vh;
     flex-direction: column;
+    overflow: hidden;
 }
-.search-bar{
-    
-    width: 100%;
-    max-width: 700px;
-    background: rgb(53, 101, 121);
+
+
+@media only screen and (max-width:730px){
+
+
+.container{
+    padding: 20px 70px;
+    color: #fff;
+}
+
+.current-info{
     display: flex;
-    align-items: center;
-    border-radius: 60px;
-    margin: 20px;
-    padding: 10px 20px;
-    backdrop-filter: blur(4px) saturate();
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.search-bar input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    width: 400px;
-   
-    font-size: 20px;
-    color: #cac7ff;
+
+
+.date-container{
+    font-weight: 100;
 }
-.search-bar button img{
-    width: 25px;
-    
+
+.date-container .time{
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6 );
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .weather-items{
+    display: flex;
+    justify-content: space-between;
 
 }
-.search-bar button{
-    border: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: transparent;
-}
-.weather_subsection{
-    width: 30%;
-    background-color: #0002;
-    border-radius: 3px;
-    margin-top: 70px;
-    padding: 20px 35px 20px 35px;
-    height: auto;
+
 }
