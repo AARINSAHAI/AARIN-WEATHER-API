@@ -56,3 +56,17 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+document.getElementById('last_updt').innerText = currentDay.last.updated;
+    document.getElementById('current_temp').innerHTML = currentDay.temp_c +'<span> &#8451;</span>';
+    document.getElementById('icon').innerHTML = `<img src = ${currentDay.condition.icon}>`;
+    document.getElementById('current_weather').innerText = currentDay.condition.text;

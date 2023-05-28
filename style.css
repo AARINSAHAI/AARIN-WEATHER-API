@@ -18,12 +18,10 @@ background-repeat: no-repeat;
 }
 
 
-@media only screen and (max-width:730px){
-
-
 .container{
     padding: 20px 70px;
     color: #fff;
+    position: relative;
 }
 
 .current-info{
@@ -40,15 +38,19 @@ background-repeat: no-repeat;
 .date-container .time{
     font-size: 70px;
     font-weight: 300;
+    
 }
 
 .date-container #am-pm{
     font-size: 30px;
     margin-left: 20px;
+    
 }
 
 .date-container .date{
     font-size: 30px;
+    
+    
 }
 
 .current-info .others{
@@ -59,6 +61,7 @@ background-repeat: no-repeat;
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
+    
 }
 
 .current-info .others .weather-items{
@@ -66,5 +69,61 @@ background-repeat: no-repeat;
     justify-content: space-between;
 
 }
+.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 550px;
+    top: 40px;
+    float: left;
+    
+    
+}  
+.search-bar{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 1px 20px;
+    background: darkslategray;
+    height: 50px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+.search-bar button img{
+    width: 25px;
+    height: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+}
+.weather_container{
+    background: rgba(24,24,27, 0.8 );
+    position: fixed;
+    padding: 25px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.weather_subsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
