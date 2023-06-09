@@ -26,8 +26,8 @@ setInterval(() => {
     const minutes = time.getMinutes();
     const ampm = hour >=12  ? 'AM' : 'PM'
 
-    timeE1.innerHTML = hoursIn12HrFormat + ':' + minutes+ ' ' + `<span
-     id="am-pm">${ampm}</span>`
+    timeE1.innerHTML = (hoursIn12HrFormat < 10? "0"+hoursIn12HrFormat : hoursIn12HrFormat)
+    + ':' + (minutes < 10? "0"+minutes : minutes)+ ' ' + `<span id="am-pm">${ampm}</span>`
 
      dateE1.innerHTML = days[day] + ',' + date+ ' ' + months[month]
 
@@ -37,27 +37,61 @@ setInterval(() => {
 function getWeatherData() {
 
     var city_name = document.getElementById('city_name').value;
-    axios.get("http://api.weatherapi.com/v1/forecast.json?key=1c1798c8ceba48f4a2675935230505&q="+city_name+"&days=7&aqi=no&alerts=yes")
+    axios.get("http://api.weatherapi.com/v1/forecast.json?key=1c1798c8ceba48f4a2675935230505&q="+city_name+"&days=7&aqi=yes&alerts=no")
 
     .then ( (response) => {
     
 
     var currentDay = response.data.current;
     var location = response.data.location;
+    var TUE = response.data.forecast.forecastday[1];
+    var WED = response.data.forecast.forecastday[2];
+    var THU = response.data.forecast.forecastday[3];
+    var FRI = response.data.forecast.forecastday[4];
+    var SAT = response.data.forecast.forecastday[5];
+    var SUN = response.data.forecast.forecastday[6];
 
     console.log(response.data);
     showWeatherData(response.data);
 
-    document.getElementById('location').innerText = location.name;
+    
    
     document.getElementById('current_temp').innerHTML = currentDay.temp_c +'<span> &#8451;</span>';
     document.getElementById('icon').innerHTML = `<img src = ${currentDay.condition.icon}>`;
     document.getElementById('current_weather').innerText = currentDay.condition.text;
+
+    document.getElementById('day1_avg_temp').innerHTML = TUE.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day1_icon').innerHTML = `<img src = ${TUE.day.condition.icon}>`;
+    document.getElementById('day1_condition').innerText = TUE.day.condition.text;
+
+
+    document.getElementById('day2_avg_temp').innerHTML = WED.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day2_icon').innerHTML = `<img src = ${WED.day.condition.icon}>`;
+    document.getElementById('day2_condition').innerText = WED.day.condition.text;
+
+
+    document.getElementById('day3_avg_temp').innerHTML = THU.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day3_icon').innerHTML = `<img src = ${THU.day.condition.icon}>`;
+    document.getElementById('day3_condition').innerText = THU.day.condition.text;
+
+
+    document.getElementById('day4_avg_temp').innerHTML = FRI.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day4_icon').innerHTML = `<img src = ${FRI.day.condition.icon}>`;
+    document.getElementById('day4_condition').innerText = FRI.day.condition.text;
+
+
+    document.getElementById('day5_avg_temp').innerHTML = SAT.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day5_icon').innerHTML = `<img src = ${SAT.day.condition.icon}>`;
+    document.getElementById('day5_condition').innerText = SAT.day.condition.text;
+
+
+    document.getElementById('day6_avg_temp').innerHTML =SUN.day.avgtemp_c +'<span> &#8451;</span>';
+    document.getElementById('day6_icon').innerHTML = `<img src = ${SUN.day.condition.icon}>`;
+    document.getElementById('day6_condition').innerText = SUN.day.condition.text;
+
+
     });
-
-    
-    
-
+  
    
     };
     

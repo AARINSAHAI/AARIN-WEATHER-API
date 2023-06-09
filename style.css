@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;&display=swap');
 
-
 body {
 margin:0;
 padding:0;
 background-image: url('istockphoto-956431518-612x612.jpg');
 background-repeat: no-repeat;
-    
     background-position: center top;
     box-sizing: border-box;
     background-size: cover;
@@ -19,9 +17,8 @@ background-repeat: no-repeat;
 
 
 .container{
-    padding: 20px 70px;
     color: #fff;
-    position: relative;
+    
 }
 
 .current-info{
@@ -30,7 +27,6 @@ background-repeat: no-repeat;
     flex-wrap: wrap;
 }
 
-
 .date-container{
     font-weight: 100;
 }
@@ -38,19 +34,19 @@ background-repeat: no-repeat;
 .date-container .time{
     font-size: 70px;
     font-weight: 300;
+    color: aqua;
     
 }
 
 .date-container #am-pm{
     font-size: 30px;
     margin-left: 20px;
-    
+    color: aqua;
 }
 
 .date-container .date{
     font-size: 30px;
-    
-    
+    color: aqua;
 }
 
 .current-info .others{
@@ -60,24 +56,23 @@ background-repeat: no-repeat;
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0;
-    border: 1px solid #eee;
+    border: 1px solid rgb(9, 152, 152);
+    color: aqua;
     
 }
 
 .current-info .others .weather-items{
     display: flex;
     justify-content: space-between;
-
 }
 .box{
-    width: 100%;
+    width: 32%;
     display: flex;
     align-items: center;
     position: relative;
     left: 550px;
     top: 40px;
     float: left;
-    
     
 }  
 .search-bar{
@@ -97,7 +92,7 @@ background-repeat: no-repeat;
     outline: none;
     padding: 24px 20px;
     font-size: 20px;
-    color: #cac7ff;
+    color: aqua;
 }
 .search-bar button img{
     width: 25px;
@@ -111,19 +106,91 @@ background-repeat: no-repeat;
     background: transparent;
 }
 .weather_container{
-    background: rgba(24,24,27, 0.8 );
+    background: rgba(2, 24, 27, 0.8);
     position: fixed;
     padding: 25px;
     bottom: 0;
     color: white;
     width: 100%;
     align-items: center;
-    justify-content: center;
-}
-.weather_subsection{
     display: flex;
+    border-top: 3px solid aqua;
+}
+.today{
+    display: flex;
+    border: 1px solid rgb(9, 152, 152);;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    padding: 30px 225px 30px 20px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+    color: rgb(9, 152, 152);
+}
+.today #location{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: right;
+}
+.today #current_temp{
+    font-size: 30px;
+    padding-top: 15px;
+    display: flex;    
+}
+.today #current_weather{
+    font-size: 25px;
+}
+
+.weather_subsection{
+    margin: 0 10px;
+    border: 1px solid rgb(9, 152, 152);
+    padding: 5px 25px 6px 25px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+}
 
+.weather_subsection #anoday{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    color: rgb(9, 152, 152);
+}
+
+.weather_subsection #day1_avg_temp{
+    font-size: 30px;
+    padding-top: 15px;
+    display: flex;
+    color: rgb(9, 152, 152);
+}
+.weather_subsection #day1_icon{
+    justify-content: center;
+    align-items: center;
+}
+.weather_subsection #day2_avg_temp{
+    font-size: 30px;
+    padding-top: 15px;
+    display: flex;
+    color: rgb(9, 152, 152);
+}
+.weather_subsection #day2_icon{
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_subsection #day1_condition{
+    font-size: 23px;
+    color: rgb(9, 152, 152);
+}
+.weather_subsection #day2_condition{
+    font-size: 23px;
+    color: rgb(9, 152, 152);
 }
