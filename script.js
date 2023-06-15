@@ -44,6 +44,7 @@ function getWeatherData() {
 
     var currentDay = response.data.current;
     var location = response.data.location;
+    var country = response.data.location.name;
     var TUE = response.data.forecast.forecastday[1];
     var WED = response.data.forecast.forecastday[2];
     var THU = response.data.forecast.forecastday[3];
@@ -54,8 +55,6 @@ function getWeatherData() {
     console.log(response.data);
     showWeatherData(response.data);
 
-    
-   
     document.getElementById('current_temp').innerHTML = currentDay.temp_c +'<span> &#8451;</span>';
     document.getElementById('icon').innerHTML = `<img src = ${currentDay.condition.icon}>`;
     document.getElementById('current_weather').innerText = currentDay.condition.text;
@@ -90,12 +89,14 @@ function getWeatherData() {
     document.getElementById('day6_condition').innerText = SUN.day.condition.text;
 
 
+    document.getElementById('country').innerText = response.data.location.name;
     });
   
    
     };
     
     function showWeatherData(data){
+      let{name,country} = data.location
         let{humidity,pressure_mb,uv,wind_kph} = data.current
 
         currentWeatherItemsE1.innerHTML = 
@@ -116,8 +117,19 @@ function getWeatherData() {
                   <div class="weather-items">
                         <div>UV</div>
                         <div>${uv}</div>
-                        
+                    </div>
+                    
+                    <div class="weather-items">
+                        <div>Name</div>
+                        <div>${name}</div>
+                       </div>
+                        <div class="weather-items">
+                            <div>Country</div>
+                            <div>${country}</div>
+                           </div>
 
-                    </div>`
+                 `
 
     }
+
+    

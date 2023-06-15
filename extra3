@@ -1,0 +1,31 @@
+<div class="weather_subsection">
+                <h5 id="anoday">THU</h5>
+                <span id="day3_icon"> </span>
+                <h2 id="day3_avg_temp"> </h2>
+                <p id="day3_condition"> </p>
+            </div>  
+
+            <div class="weather_subsection">
+                <h5 id="anoday">FRI</h5>
+                <span id="day4_icon"> </span>
+                <h2 id="day4_avg_temp"> </h2>
+                <p id="day4_condition"> </p>
+            </div>  
+
+            <div class="weather_subsection">
+                <h5 id="anoday">SAT</h5>
+                <span id="day5_icon"> </span>
+                <h2 id="day5_avg_temp"> </h2>
+                <p id="day5_condition"> </p>
+            </div>  
+
+            <div class="weather_subsection">
+                <h5 id="anoday">SUN</h5>
+                <span id="day6_icon"> </span>
+                <h2 id="day6_avg_temp"> </h2>
+                <p id="day6_condition"> </p>
+            </div>  
+
+            
+            
+         </div>
