@@ -37,7 +37,7 @@ setInterval(() => {
 function getWeatherData() {
 
     var city_name = document.getElementById('city_name').value;
-    axios.get("http://api.weatherapi.com/v1/forecast.json?key=1c1798c8ceba48f4a2675935230505&q="+city_name+"&days=7&aqi=yes&alerts=no")
+    axios.get("         http://api.weatherapi.com/v1/forecast.json?key=1c1798c8ceba48f4a2675935230505&q="+city_name+"&days=7&aqi=yes&alerts=no")
 
     .then ( (response) => {
     
